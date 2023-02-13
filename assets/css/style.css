@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+html {
+    /* 1rem =16px
+    1rem=10px
+    10px/16px=0.625*100=100=62.5 */
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 141rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.33%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.33%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* *************header************ */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-bg {
+    background-color: rgb(45, 44, 44);
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 /0.4);
+}
+
+header .row {
+    /* background-color:gray; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 0;
+}
+
+header nav ul li a {
+    color: var(--secondary-color);
+    padding: 1rem 3.3rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+header nav ul li:hover {
+    background-color: rgb(111, 105, 105);
+    /* padding: 1rem 0; */
+    box-shadow: 0 2px 2px 2px rgba(0 0 0 /0.2);
+    display: inline-block;
+
+}
+
+header .row>a i {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-left: 3.3rem;
+}
+
+header nav>i,
+header nav ul>i {
+    display: none !important;
+}
+
+header nav ul li ul {
+    position: absolute;
+    top: 4.4rem;
+    left: 0;
+    width: 16rem;
+    display: none;
+    padding: 1rem 0;
+}
+
+header nav ul li:hover ul {
+    display: inline-block;
+}
+
+/* ********************************** */
+
+/* ***************HERO****************** */
+
+#hero {
+    background-image: url(../images/bc.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0 0 0/ 0.4);
+    background-blend-mode: multiply;
+}
+
+h1 {
+    font-size: 7rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding-top: 25rem;
+}
+
+.container p {
+    font-size: 1.8rem;
+    color: #CFCFCF;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+.box {
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 3rem 0;
+    border-radius: 4rem;
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 /0.4);
+}
+
+.box ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1.5rem;
+
+}
+
+.box ul li a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #9B9B9B;
+    padding: 1rem;
+
+}
+
+.box ul li a:hover {
+    background: var(--primary-color);
+    border-radius: 4rem;
+    color: var(--secondary-color);
+}
+
+#hero p {
+    font-weight: 500;
+    color: #9B9B9B;
+}
+
+#hero span {
+    color: var(--secondary-color);
+}
+
+/* ****************************************** */
+/* *****************hero2**************************/
+
+#hero2 h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 5rem;
+}
+#hero2 p{
+    text-align: center;
+    font-size: 1rem;
+}
+.leftRight {
+    display: flex;
+    justify-content: space-between;
+}
+.leftRight a {
+    background-color: var(--secondary-color);
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 /0.4);
+    border-radius: 0.5rem;
+}
+.leftRight a i {
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.imgs{
+    display: flex;
+    column-gap: 2rem;
+    margin: 2rem 4rem;
+    text-align: center;
+}
+#hero2 img{
+    width: 40rem;
+    height: 35rem;
+    /* object-position: center center; */
+    /* object-fit: cover; */
+    border-radius: 1rem;
+    /* margin: 0 1rem; */
+
+}
+.id{
+    width: 40rem;
+    height: 35rem;
+    box-sizing: border-box;
+    /* border: 2px solid rgb(16, 109, 126); */
+
+}
+
+.img2 img{
+    width: 40rem;
+    height: 35rem;
+    /* border: 2px solid rgb(24, 98, 24); */
+}
+.deta{
+    width: 100%;
+    height: 10rem;
+    border: 2px solid rgb(44, 22, 99);
+}
+/* ************************* */
+
+
+@media screen and (max-width: 1250px) {
+
+    header img {
+        width: 18rem;
+    }
+
+    header nav ul li a {
+        padding: 0 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    header .row>a i {
+        font-size: 1.2rem;
+        margin-left: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    header img {
+        width: 15rem;
+    }
+
+    header nav>ul {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        /* right: 0; */
+        width: 50%;
+        background-color: rgb(108, 118, 108);
+        height: 100vh;
+        transition: all 1s;
+        padding: 3.5rem 0;
+    }
+
+    header nav>i {
+        font-size: 2rem;
+        color: var(--secondary-color);
+        display: inline-block !important;
+    }
+
+    header nav ul>i {
+        font-size: 2rem;
+        color: var(--secondary-color);
+        /* float: right; */
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block !important;
+    }
+
+    header nav ul li {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    header nav ul li a {
+        padding: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    header .row>a i {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    header nav ul li ul,
+    header nav ul li ul li {
+        position: relative;
+        left: 0;
+        top: 1.2rem;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .menu-slider {
+        right: 0%;
+    }
+}
